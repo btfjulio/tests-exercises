@@ -10,6 +10,7 @@ RSpec.describe Stack do
 
       expect(stack.top).to eq(2)
     end
+    
     it 'takes an element from the top of the stack' do
       stack = Stack.new
 
