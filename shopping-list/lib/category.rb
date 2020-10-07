@@ -1,0 +1,15 @@
+# frozen_string_literal: true
+
+class Category
+  attr_reader :subcategories
+  attr_reader :name
+
+  def initialize(name)
+    @name = name
+    @subcategories = []
+  end
+
+  def add_subcategories(*subcategories)
+    @subcategories += subcategories
+  end
+end
